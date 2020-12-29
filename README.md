@@ -1,8 +1,8 @@
 ![](Logo.png)
 
-# Caching Proxy Factory
+# Web Service Factory
 
-Instantiate, configure caching proxy server and distribute configuration.
+Instantiate, configure web server and deploy targets: websites, micro-services etc.
 
 # Compatibility
 
