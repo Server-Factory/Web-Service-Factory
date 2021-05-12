@@ -1,21 +1,3 @@
-[submodule "Core"]
-	path = Core
-	url = git@github.com:milos85vasic/Server-Factory.git
 [submodule "Logger"]
 	path = Logger
 	url = git@github.com:milos85vasic/Logger.git
-[submodule "Definitions/Docker"]
-	path = Definitions/Docker
-	url = git@github.com:milos85vasic/Server-Factory-Docker-Definitions.git
-[submodule "Definitions/Software"]
-	path = Definitions/Software
-	url = git@github.com:milos85vasic/Server-Factory-Software-Definitions.git
-[submodule "Definitions/main/docker"]
-	path = Definitions/main/docker
-	url = git@github.com:milos85vasic/Server-Factory-Docker-Definitions.git
-[submodule "Definitions/main/software"]
-	path = Definitions/main/software
-	url = git@github.com:milos85vasic/Server-Factory-Software-Definitions.git
-[submodule "Definitions/main/stacks"]
-	path = Definitions/main/stacks
-	url = git@github.com:milos85vasic/Server-Factory-Stack-Definitions.git
