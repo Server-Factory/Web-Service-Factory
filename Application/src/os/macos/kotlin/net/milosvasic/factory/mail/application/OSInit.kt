@@ -3,7 +3,7 @@ package net.milosvasic.factory.mail.application
 import com.apple.eawt.Application
 import net.milosvasic.factory.platform.OperatingSystem
 import net.milosvasic.factory.platform.Platform
-import net.milosvasic.factory.proxy.caching.application.BuildInfo
+import net.milosvasic.factory.web_service.application.BuildInfo
 import java.io.IOException
 import javax.imageio.ImageIO
 

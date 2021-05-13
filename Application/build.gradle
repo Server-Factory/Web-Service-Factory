@@ -1,12 +1,9 @@
-import java.util.concurrent.TimeUnit
-
 buildscript {
 
     repositories {
 
         google()
         mavenCentral()
-        jcenter()
     }
 
     dependencies {
@@ -25,12 +22,11 @@ repositories {
 
     google()
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
 
-    implementation project(":Core:Framework")
+    implementation project(":Factory")
 
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
@@ -48,6 +44,7 @@ jar {
     from {
 
         configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
 
@@ -58,6 +55,24 @@ test {
 
 sourceSets.main.java.srcDirs += 'src/main/kotlin'
 sourceSets.main.java.srcDirs += isMacOS() ? 'src/os/macos/kotlin' : 'src/os/default/kotlin'
+
+task install {
+
+    dependsOn assemble
+    doLast {
+
+        println "Installing Web Service Factory"
+        delete fileTree("Release") {
+
+            include "**/*.jar"
+        }
+        copy {
+
+            from "build/libs/Application.jar"
+            into "Release"
+        }
+    }
+}
 
 private static boolean isMacOS() {
 
