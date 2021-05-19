@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
 
     tag = BuildInfo.versionName
     val consoleLogger = ConsoleLogger()
-    val builder = ServerFactoryBuilder()
+    val builder = ServerFactoryBuilder().setFeatureDatabase(false) // TODO: <-- Database to be enabled
 
     try {
 

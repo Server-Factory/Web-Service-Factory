@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Ubuntu 20" type="BashProRunConfiguration" folderName="Mail Server Factory">
+    <scriptContent>mail_factory $PROJECT_DIR$/Examples/Ubuntu_20.json</scriptContent>
+    <option name="sourceType" value="snippet" />
+    <RunnerSettings bashdbVersion="Automatic" bashPathMapper="Automatic" RunnerId="pro.bashsupport.shDebugRunner" />
+    <method v="2" />
+  </configuration>
+</component>
