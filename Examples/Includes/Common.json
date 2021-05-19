@@ -3,6 +3,7 @@
     "Uses.json",
     "Server.json",
     "Behavior.json",
+    "Web_Services.json",
     "_Docker.json"
   ]
 }
