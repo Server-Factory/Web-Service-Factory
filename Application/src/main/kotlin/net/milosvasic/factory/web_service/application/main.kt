@@ -90,6 +90,10 @@ fun main(args: Array<String>) {
                             log.i("Server factory initialized")
                             factory.run()
                         } catch (e: IllegalStateException) {
+
+                            fail(e)
+                        } catch (e: IllegalArgumentException) {
+
                             fail(e)
                         }
                     } else {
