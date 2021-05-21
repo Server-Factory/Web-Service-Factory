@@ -3,7 +3,10 @@
     {
       "name": "damodred.com",
       "type": "web_service",
-      "source": "git@github.com:milos85vasic/damodred.com-WSF-Package.git"
+      "source": {
+        "type": "git",
+        "value": "git@github.com:milos85vasic/damodred.com-WSF-Package.git"
+      }
     }
   ]
 }
