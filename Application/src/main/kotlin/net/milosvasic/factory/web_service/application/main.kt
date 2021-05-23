@@ -22,6 +22,7 @@ import net.milosvasic.logger.FilesystemLogger
 import java.io.File
 import java.io.IOException
 import java.nio.file.InvalidPathException
+import java.util.concurrent.RejectedExecutionException
 
 fun main(args: Array<String>) {
 
@@ -87,12 +88,16 @@ fun main(args: Array<String>) {
 
                     if (success) {
                         try {
+
                             log.i("Server factory initialized")
                             factory.run()
                         } catch (e: IllegalStateException) {
 
                             fail(e)
                         } catch (e: IllegalArgumentException) {
+
+                            fail(e)
+                        } catch (e: RejectedExecutionException) {
 
                             fail(e)
                         }
