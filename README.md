@@ -30,4 +30,5 @@ $ ./gradlew test
 
 ## Requirements
 
-Tbd.
+- Git
+- Tbd.
