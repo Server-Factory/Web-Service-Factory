@@ -110,7 +110,7 @@ fun main(args: Array<String>) {
 
             val handler = DefaultInitializationHandler()
 
-            InitializationFlow()
+            InitializationFlow("Main Initialization")
                 .width(factory)
                 .handler(handler)
                 .onFinish(callback)
